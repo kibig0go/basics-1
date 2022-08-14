@@ -7,7 +7,7 @@ function calc(action, a, b) {
         case 'subtract':
             return a - b;
         default:
-            return;
+            return 'error';
     }
 }
 
