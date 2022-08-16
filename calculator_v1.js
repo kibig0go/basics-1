@@ -1,13 +1,18 @@
 function calc(action, a, b) {
+    let operations = {
+        'add': a + b,
+        'multi': a * b,
+        'subtract': a - b,
+    }
     switch (action) {
         case 'add':
-            return a + b;
+            return operations.add;
         case 'multi':
-            return a * b;
+            return operations.multi;
         case 'subtract':
-            return a - b;
+            return operations.subtract;
         default:
-            return 'error';
+            return "error";
     }
 }
 
